@@ -55,6 +55,10 @@ Exemplo de código:
 />
 ```
 
+Resultado:
+
+![WebView](assets-desafio/exemplo-web-view.png)
+
 ## Entrega
 
 Esse desafio **não precisa ser entregue** e não receberá correção, mas você pode ver o resultado do código do desafio aqui: https://github.com/Rocketseat/bootcamp-gostack-desafio-05
