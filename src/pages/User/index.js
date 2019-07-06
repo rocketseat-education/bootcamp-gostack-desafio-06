@@ -34,6 +34,7 @@ export default class User extends Component {
     stars: [],
     page: 1,
     loading: true,
+    refreshing: false,
   };
 
   async componentDidMount() {
@@ -65,8 +66,8 @@ export default class User extends Component {
     this.load(nextPage);
   };
 
-  refreshList = () => {
-    this.setState({ refreshing: true });
+  refreshList = async () => {
+    await this.setState({ refreshing: true, stars: [] });
 
     this.load();
   };
