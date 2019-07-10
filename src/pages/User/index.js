@@ -50,7 +50,7 @@ export default class User extends Component {
     });
 
     this.setState({
-      stars: [...stars, ...response.data],
+      stars: page >= 2 ? [...stars, ...response.data] : response.data,
       page,
       loading: false,
       refreshing: false,
