@@ -66,10 +66,8 @@ export default class User extends Component {
     this.load(nextPage);
   };
 
-  refreshList = async () => {
-    await this.setState({ refreshing: true, stars: [] });
-
-    this.load();
+  refreshList = () => {
+    this.setState({ refreshing: true, stars: [] }, this.load);
   };
 
   handleNavigate = repository => {
