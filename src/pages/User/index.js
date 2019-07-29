@@ -34,6 +34,7 @@ export default class User extends Component {
     stars: [],
     page: 1,
     loading: true,
+    refreshing: false,
   };
 
   async componentDidMount() {
@@ -66,9 +67,7 @@ export default class User extends Component {
   };
 
   refreshList = () => {
-    this.setState({ refreshing: true });
-
-    this.load();
+    this.setState({ refreshing: true, stars: [] }, this.load);
   };
 
   handleNavigate = repository => {
