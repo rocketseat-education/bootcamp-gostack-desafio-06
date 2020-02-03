@@ -6,7 +6,7 @@
   Desafio 6: Primeiro projeto com React Native
 </h3>
 
-<blockquote align="center">“Só deseje as coisas as quais você está disposto a lutar”!</blockquote>
+<p align="center">“Só deseje as coisas as quais você está disposto a lutar”!</p>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-06?color=%2304D361">
